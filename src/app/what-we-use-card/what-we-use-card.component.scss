@@ -1,0 +1,25 @@
+@import "../../styles.scss";
+
+.what-we-use-card {
+  border: 1px black solid;
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-items: center;
+  padding: 32px 26px;
+  align-items: center;
+  width: 250px;
+
+  fa-icon {
+    font-size: 75px;
+    color: $primary;
+  }
+
+  button {
+    margin-top: 1rem;
+  }
+
+  .content {
+    text-align: left;
+  }
+}

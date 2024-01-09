@@ -1,1 +1,164 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100&family=Rubik:wght@400;500&display=swap");
+
+$primary: #596d74;
+$secondary: #f5f5f5;
+$font-family: "Roboto", sans-serif;
+
+body {
+  font-family: $font-family;
+  font-weight: 300;
+  max-width: 1920px;
+  min-width: 550px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $primary;
+  margin: 0;
+
+  &.thin {
+    font-weight: 100;
+    color: black;
+  }
+}
+
+h2 {
+  font-size: 40px;
+  margin: 0;
+  color: rgba($color: #000000, $alpha: 0.6);
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: rgba($color: #000000, $alpha: 0.6);
+  font-weight: 300;
+  font-style: italic;
+
+  &.bold {
+    font-weight: 800;
+    color: black;
+    font-style: normal;
+  }
+}
+
+.label {
+  font-weight: 100;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.btn {
+  font-weight: 300;
+  font-size: 1rem;
+  outline: none;
+  padding: 10px 24px;
+  font-family: $font-family;
+
+  &.solid {
+    background-color: $primary;
+    color: white;
+    border: none;
+
+    &:hover {
+      opacity: 0.5;
+      cursor: pointer;
+    }
+  }
+
+  &.outline {
+    background-color: white;
+    border: 2px solid $primary;
+    color: $primary;
+
+    &:hover {
+      background-color: $primary;
+      color: white;
+      cursor: pointer;
+    }
+  }
+
+  &.light {
+    background-color: white;
+    border: none;
+    color: $primary;
+
+    &:hover {
+      opacity: 0.5;
+      cursor: pointer;
+    }
+  }
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+
+  li:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.heading-text {
+  padding-top: 175px;
+  padding-bottom: 215px;
+  padding-right: var(--body-x-padding);
+  padding-left: 75px;
+}
+
+@media (max-width: 760px) {
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .heading-text {
+    text-align: left;
+  }
+}
+
+@media (min-width: 760px) {
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .heading-text {
+    text-align: right;
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    --body-x-padding: 155px;
+  }
+
+  .navbar-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  body {
+    --body-x-padding: 50px;
+  }
+
+  .navbar {
+    display: none;
+  }
+}

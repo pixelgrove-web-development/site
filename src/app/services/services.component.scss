@@ -1,0 +1,48 @@
+@import "../../styles.scss";
+
+.services-heading {
+  display: grid;
+  .heading-text {
+    background-color: $secondary;
+  }
+  .services-img {
+    background-image: url("../../assets/services-heading.jpg");
+  }
+}
+
+.img {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content-grid {
+  .text-content {
+    padding: 85px var(--body-x-padding);
+
+    p {
+      opacity: 0.75;
+    }
+  }
+}
+
+.interactive-web-design {
+  background-color: $primary;
+  color: white;
+
+  h2 {
+    color: white;
+  }
+}
+
+.frontend-img {
+  background-image: url("../../assets/custom-frontend-development.jpg");
+}
+
+.interactive-web-img {
+  background-image: url("../../assets/interactive-design.jpg");
+}
+
+.mobile-first-img {
+  background-image: url("../../assets/mobile-first-development.jpg");
+  background-position: center;
+}

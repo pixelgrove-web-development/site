@@ -1,0 +1,102 @@
+@import "../../styles.scss";
+
+.hero-section {
+  overflow-y: hidden;
+  text-align: right;
+
+  .img {
+    background-image: url("../../assets/hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 100%;
+  }
+
+  .heading {
+    background-color: $secondary;
+
+    h3 {
+      margin-top: 1rem;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.what-we-use {
+  text-align: center;
+  padding: 85px var(--body-x-padding);
+
+  h2 {
+    margin-bottom: 30px;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+
+    app-what-we-use-card {
+      margin-bottom: 60px;
+    }
+
+    .show-more {
+      background-color: rgba($color: black, $alpha: 0.75);
+      border-radius: 0.5rem;
+      justify-items: center;
+      padding: 32px 26px;
+      align-items: center;
+      width: 250px;
+      margin-bottom: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      h3 {
+        color: white;
+        font-weight: 800;
+        font-style: normal;
+        margin: 0;
+      }
+
+      &:hover {
+        opacity: 0.5;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.what-we-do {
+  background-color: $primary;
+  color: white;
+
+  p {
+    opacity: 0.6;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    color: white;
+  }
+
+  .what-we-do-content {
+    padding: 85px var(--body-x-padding);
+  }
+
+  .what-we-do-img {
+    background-image: url("../../assets/what-we-do.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 760px) {
+  .cards {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 760px) {
+  .cards {
+    justify-content: space-between;
+  }
+}

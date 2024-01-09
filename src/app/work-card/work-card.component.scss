@@ -1,0 +1,33 @@
+@import "../../styles.scss";
+
+.work-card {
+  background-color: $primary;
+  width: 350px;
+  height: 385px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 12px;
+  overflow: hidden;
+
+  img {
+    max-width: 100%;
+  }
+
+  .text-content {
+    width: 100%;
+    padding: 2rem 1.5rem;
+    text-align: left;
+
+    .heading {
+      color: white;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    button {
+      align-self: center;
+      width: 100%;
+      margin-top: 1rem;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+@import "../../styles.scss";
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px var(--body-x-padding);
+  align-items: center;
+
+  .brand {
+    align-self: center;
+    width: 145px;
+  }
+
+  ul li {
+    margin-right: 2rem;
+  }
+}
+
+.navbar-mobile {
+  .mobile-menu {
+    position: absolute;
+    display: block;
+    background-color: white;
+    padding: 1rem 0;
+    top: 4rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 75%;
+    text-align: center;
+    ul {
+      display: block;
+      text-align: center;
+      li {
+        padding: 1rem 0;
+        margin-right: 0;
+        width: 100%;
+
+        &:hover {
+          background-color: $primary;
+          color: white;
+        }
+      }
+    }
+
+    .close-bar {
+      width: 100%;
+      text-align: right;
+
+      fa-icon {
+        margin-right: 1rem;
+      }
+    }
+
+    button {
+      margin: auto;
+    }
+  }
+}
+
+fa-icon {
+  cursor: pointer;
+}

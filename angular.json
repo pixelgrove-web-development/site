@@ -97,8 +97,18 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2,
+            "browserTarget": "pixelgrove:build:production"
+          }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "8d23748d-705a-4701-a52d-be643658ddfd"
   }
 }
